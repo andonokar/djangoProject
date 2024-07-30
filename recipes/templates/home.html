@@ -1,0 +1,11 @@
+{% extends 'father.html' %}
+{% block content %}
+<div class="main-content main-content-list container">
+    {% for recipe in recipes %}
+        {% include 'recipe.html' %}
+    {% endfor %}
+</div>
+{% endblock content %}
+{% block title %}
+Home |
+{% endblock title %}
